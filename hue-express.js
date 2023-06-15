@@ -29,7 +29,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/alllights', function(req, res) {
-    var urlOri = "http://192.168.86.111/api/ce3fdkAFNsSPVulaUl9eAtdjhEkRfJ9Knwi17wTz/lights/";
+    var urlOri = "https://192.168.2.110/api/po8beVPtRIuBoFZlyKBJZ3X-ZXG-Sgjoz5u2k7Dw/lights/";
     var url = urlOri;
     //var url = +id;
     console.log(url);  
@@ -51,7 +51,7 @@ app.get('/alllights', function(req, res) {
 
 app.get('/lights/:id', function(req, res) {
     var id = req.params.id;
-    var urlOri = "http://192.168.86.111/api/ce3fdkAFNsSPVulaUl9eAtdjhEkRfJ9Knwi17wTz/lights/";
+    var urlOri = "https://192.168.2.110/api/po8beVPtRIuBoFZlyKBJZ3X-ZXG-Sgjoz5u2k7Dw/lights/";
     var url = urlOri + id;
     //var url = +id;
     console.log(url);  
@@ -82,7 +82,7 @@ app.post('/state/:id', function(req, res) {
     console.log(req.body);      // your JSON
     var body = req.body;
     var id = req.params.id;
-    var urlOri = "http://192.168.86.111/api/ce3fdkAFNsSPVulaUl9eAtdjhEkRfJ9Knwi17wTz/lights/";
+    var urlOri = "https://192.168.2.110/api/po8beVPtRIuBoFZlyKBJZ3X-ZXG-Sgjoz5u2k7Dw/lights/";
     var url = urlOri + id + "/state/";
     //var url = +id;
     console.log(url);  
